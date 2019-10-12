@@ -7,6 +7,17 @@ h1,h2,h3{
 h2{
     font-size: 18px;
 }
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.burger{
+    display: none;
+}
+.menu .link{
+    font-size: 14px;
+    padding: 5px;
+}
 @media(max-width: 1280px){
     h2{
         font-size: 16px;
@@ -18,6 +29,13 @@ h2{
     }
 }
 @media(max-width: 320px){
+    .menu{
+        flex-direction: column;
+        display: none;
+    }
+    .burger{
+        display: inline-block;
+    }
     h2{
         font-size: 12px;
     }
